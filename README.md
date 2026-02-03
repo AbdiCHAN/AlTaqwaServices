@@ -34,53 +34,80 @@
 
 ## 📁 Folder Structure
 
-AlTaqwaUmrahHajj/
-├─ frontend/
-│ ├─ src/
-│ │ ├─ components/
-│ │ │ ├─ Navbar.jsx Navbar.css
-│ │ │ ├─ Footer.jsx Footer.css
-│ │ │ ├─ HeroSection.jsx HeroSection.css
-│ │ │ └─ PackageCard.jsx PackageCard.css
-│ │ ├─ pages/
-│ │ │ ├─ Home.jsx Home.css
-│ │ │ ├─ Services.jsx Services.css
-│ │ │ ├─ About.jsx About.css
-│ │ │ ├─ Contact.jsx Contact.css
-│ │ │ ├─ Packages.jsx Packages.css
-│ │ │ ├─ PackageDetails.jsx PackageDetails.css
-│ │ │ ├─ Checkout.jsx Checkout.css
-│ │ │ └─ BookingConfirmed.jsx BookingConfirmed.css
-│ │ ├─ hooks/
-│ │ │ ├─ useFetchPackages.js
-│ │ │ └─ useFetchPackageById.js
-│ │ ├─ assets/
-│ │ │ ├─ images/
-│ │ │ ├─ logos/
-│ │ │ └─ icons/
-│ │ ├─ tests/
-│ │ │ ├─ Home.test.js
-│ │ │ ├─ Services.test.js
-│ │ │ ├─ About.test.js
-│ │ │ ├─ Contact.test.js
-│ │ │ ├─ Packages.test.js
-│ │ │ ├─ PackageDetails.test.js
-│ │ │ ├─ Checkout.test.js
-│ │ │ ├─ BookingConfirmed.test.js
-│ │ │ ├─ Navbar.test.js
-│ │ │ ├─ Footer.test.js
-│ │ │ ├─ HeroSection.test.js
-│ │ │ └─ PackageCard.test.js
-│ │ └─ App.jsx
-├─ backend/
-│ ├─ routes/
-│ ├─ controllers/
-│ ├─ models/
-│ ├─ server.js
-│ └─ db.json
-├─ .gitignore
-├─ LICENSE
-└─ README.md
+AlTaqwaServices/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── db.json
+│   ├── server.js
+│   ├── package.json
+│   └── package-lock.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── images/
+│   │   │   ├── logos/
+│   │   │   └── icons/
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Navbar.css
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Footer.css
+│   │   │   ├── HeroSection.jsx
+│   │   │   ├── HeroSection.css
+│   │   │   ├── PackageCard.jsx
+│   │   │   └── PackageCard.css
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Home.css
+│   │   │   ├── Services.jsx
+│   │   │   ├── Services.css
+│   │   │   ├── About.jsx
+│   │   │   ├── About.css
+│   │   │   ├── Contact.jsx
+│   │   │   ├── Contact.css
+│   │   │   ├── Packages.jsx
+│   │   │   ├── Packages.css
+│   │   │   ├── PackageDetails.jsx
+│   │   │   ├── PackageDetails.css
+│   │   │   ├── Checkout.jsx
+│   │   │   ├── Checkout.css
+│   │   │   ├── BookingConfirmed.jsx
+│   │   │   ├── BookingConfirmed.css
+│   │   │   ├── AdminDashboard.jsx
+│   │   │   └── Login.jsx
+│   │   ├── hooks/
+│   │   │   ├── useFetchPackages.js
+│   │   │   ├── useFetchPackageById.js
+│   │   │   ├── useApi.js
+│   │   │   ├── useAuth.js
+│   │   │   ├── useCreateBooking.js
+│   │   │   ├── useFetchCountries.js
+│   │   │   └── usePrayerTimes.js
+│   │   ├── tests/
+│   │   │   ├── Home.test.js
+│   │   │   ├── Services.test.js
+│   │   │   ├── About.test.js
+│   │   │   ├── Contact.test.js
+│   │   │   ├── Packages.test.js
+│   │   │   ├── PackageDetails.test.js
+│   │   │   ├── Checkout.test.js
+│   │   │   ├── BookingConfirmed.test.js
+│   │   │   ├── Navbar.test.js
+│   │   │   ├── Footer.test.js
+│   │   │   ├── HeroSection.test.js
+│   │   │   └── PackageCard.test.js
+│   │   ├── App.jsx
+│   │   └── index.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── .gitignore
+├── LICENSE
+└── README.md
+
 
 ---
 
