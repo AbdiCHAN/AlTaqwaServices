@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@altaqwa.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@test.com",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "packages": [
+    {
+      "id": 1,
+      "name": "Premium Umrah",
+      "price": 5850,
+      "duration": "14 Days",
+      "image": "https://picsum.photos/800/600?umrah",
+      "description": "Luxury hotels near Haram with scholars"
+    }
+  ],
+  "bookings": []
+}

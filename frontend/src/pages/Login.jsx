@@ -1,4 +1,3 @@
-// frontend/src/pages/Home.jsx
 import HeroSection from "../components/HeroSection";
 import usePrayerTimes from "../hooks/usePrayerTimes";
 import "./Home.css";

@@ -1,0 +1,12 @@
+.prayer {
+  padding: 40px;
+  background: #f7fbf9;
+  text-align: center;
+}
+.prayer h2 {
+  color: #0f4d3a;
+}
+.prayer ul {
+  list-style: none;
+  padding: 0;
+}
