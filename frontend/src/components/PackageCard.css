@@ -1,17 +1,94 @@
 .package-card {
-  background: white;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
-.package-card img {
-  width: 100%;
+
+.package-card:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-4px);
+}
+
+.package-image {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.package-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #064e3b;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.package-body {
+  padding: 24px;
+}
+
+.package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.package-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.price {
+  background: #064e3b;
+  color: #fff;
+  padding: 6px 12px;
   border-radius: 10px;
+  font-weight: 800;
+  border-bottom: 2px solid #d4af37;
 }
-.package-card button {
+
+.package-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.primary-btn {
+  flex: 1;
   background: #22c55e;
+  color: #fff;
   border: none;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 999px;
+  padding: 12px;
+  font-weight: 700;
+  cursor: pointer;
 }
+
+.primary-btn:hover {
+  filter: brightness(1.1);
+}
+
+.compare-btn {
+  width: 48px;
+  border-radius: 999px;
+  border: 2px solid #d4af37;
+  background:

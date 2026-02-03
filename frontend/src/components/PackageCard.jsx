@@ -1,19 +1,30 @@
-import "./PackageCard.css";
+// frontend/src/components/PackageCard.jsx
 import React from "react";
-import NavBar from "./Navbar";
+import { useNavigate } from "react-router-dom";
+import "./PackageCard.css"; // separate styling
 
-import { Link } from "react-router-dom";
+export default function PackageCard({ id, title, price, description, image }) {
+  const navigate = useNavigate();
 
-export default function PackageCard({ pkg }) {
   return (
     <div className="package-card">
-      <img src={pkg.image} alt={pkg.name} />
-      <h3>{pkg.name}</h3>
-      <p>{pkg.duration} Days • {pkg.type}</p>
-      <strong>${pkg.price}</strong>
-      <Link to={`/packages/${pkg.id}`}>
-        <button>View Details</button>
-      </Link>
+      <div
+        className="package-image"
+        style={{ backgroundImage: `url(${image})` }}
+      />
+      <div className="package-body">
+        <h3>{title}</h3>
+        <span className="price">{price}</span>
+        <p>{description}</p>
+        <div className="card-actions">
+          <button
+            className="primary-btn"
+            onClick={() => navigate(`/packages/${id}`)}
+          >
+            View Details
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

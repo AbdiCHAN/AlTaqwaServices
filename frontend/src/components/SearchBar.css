@@ -1,0 +1,48 @@
+/* Wrapper for search input */
+.search-wrapper {
+  display: flex;
+  min-width: 160px;
+  max-width: 260px;
+  height: 40px;
+}
+
+/* Search container */
+.search-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+/* Search icon container */
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  color: #d4af37; /* gold */
+}
+
+/* Search input field */
+.search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0 16px 0 8px;
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Placeholder styling */
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Material icon size */
+.material-symbols-outlined {
+  font-size: 20px;
+}

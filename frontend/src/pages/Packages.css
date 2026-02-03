@@ -1,69 +1,61 @@
-/* Packages Page */
+/* Packages.css */
+
 .packages-page {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.filters-container {
-  /* Sidebar shadow, padding and rounded corners already applied with Tailwind */
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-.apply-btn {
+.breadcrumb a {
+  color: #047857;
+  text-decoration: none;
+}
+
+.packages-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.packages-layout {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 0.75rem;
-  background-color: #22c55e;
-  color: white;
-  font-weight: bold;
-  border-radius: 9999px;
-  transition: all 0.3s;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.apply-btn:hover {
-  filter: brightness(1.1);
+.filters {
+  flex: 1 1 220px;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 10px;
 }
 
-.package-card .badge {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+.filter-group h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
-/* Package buttons */
-.primary-btn {
-  background-color: #22c55e;
-  color: white;
-  padding: 0.75rem;
-  font-weight: bold;
-  border-radius: 9999px;
-  transition: all 0.3s;
+.filter-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
 }
 
-.primary-btn:hover {
-  filter: brightness(1.1);
+.packages-content {
+  flex: 3 1 720px;
 }
 
-.outline-btn {
-  border: 2px solid #D4AF37;
-  color: #D4AF37;
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
-  border-radius: 9999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s;
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-.outline-btn:hover {
-  background-color: #D4AF37;
-  color: white;
-}
-
-/* Badge */
-.package-card .badge {
-  font-size: 10px;
-  font-weight: bold;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
+.no-results {
+  text-align: center;
+  color: #888;
 }

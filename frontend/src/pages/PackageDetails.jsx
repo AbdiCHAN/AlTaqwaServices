@@ -1,6 +1,8 @@
 import React from "react";
 import "./PackageDetails.css";
-import NavBar from "../components/Navbar";
+import navbar from "../components/Navbar.jsx";
+import SearchBar from "../components/SearchBar.jsx";
+
 
 export default function PackageDetails() {
   return (
