@@ -1,26 +1,26 @@
-import HeroSection from "../components/HeroSection";
-import usePrayerTimes from "../hooks/usePrayerTimes";
-import "./Home.css";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
-export default function Home() {
-  const times = usePrayerTimes("Makkah");
+export default function Login() {
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  async function handleLogin(e) {
+    e.preventDefault();
+    await login(email, password);
+    navigate("/admin");
+  }
 
   return (
-    <>
-      <HeroSection />
-
-      <section className="prayer">
-        <h2>Prayer Times – Makkah</h2>
-        {times && (
-          <ul>
-            <li>Fajr: {times.Fajr}</li>
-            <li>Dhuhr: {times.Dhuhr}</li>
-            <li>Asr: {times.Asr}</li>
-            <li>Maghrib: {times.Maghrib}</li>
-            <li>Isha: {times.Isha}</li>
-          </ul>
-        )}
-      </section>
-    </>
+    <form onSubmit={handleLogin} style={{ padding: 60 }}>
+      <h2>Admin Login</h2>
+      <input placeholder="Email" onChange={e => setEmail(e.target.value)} />
+      <input placeholder="Password" type="password" onChange={e => setPassword(e.target.value)} />
+      <button>Login</button>
+    </form>
   );
 }

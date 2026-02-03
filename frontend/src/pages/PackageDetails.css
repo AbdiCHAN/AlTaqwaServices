@@ -1,15 +1,67 @@
-.details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 60px;
-  gap: 40px;
-}
+/* Base Fonts */
+body, .package-details-page { font-family: 'Noto Sans', sans-serif; }
+h1, h2, h3, .font-display { font-family: 'Noto Serif', serif; }
 
-.details img {
-  width: 100%;
-  border-radius: 20px;
-}
+/* Header Links */
+.nav-link { color: rgba(255,255,255,0.8); font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+.nav-link:hover { color: #32D74B; }
+.nav-link-active { color: #32D74B; border-bottom: 2px solid #32D74B; font-weight: 700; }
 
-.info h1 {
-  color: #0f4d3a;
-}
+/* Buttons */
+.btn-primary { background-color: #32D74B; color: black; transition: opacity 0.2s; }
+.btn-primary:hover { opacity: 0.9; }
+
+/* Breadcrumb */
+.breadcrumb-link { color: rgba(6,78,59,0.6); font-size: 0.875rem; font-weight: 500; }
+.breadcrumb-link:hover { color: #32D74B; }
+.breadcrumb-separator { color: rgba(6,78,59,0.3); }
+.breadcrumb-current { color: #000; }
+
+/* Package Header */
+.package-title { font-size: 3rem; font-weight: 900; line-height: 1.1; }
+.package-subtitle { color: rgba(6,78,59,0.7); font-size: 1.125rem; }
+
+/* Package Buttons */
+.package-btn { display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; font-weight: 700; border-radius: 1rem; }
+.brochure-btn { background: white; border: 1px solid rgba(6,78,59,0.2); color: black; }
+.brochure-btn:hover { border-color: #32D74B; }
+.share-btn { background: #32D74B; color: black; }
+.share-btn:hover { filter: brightness(1.05); }
+
+/* Gallery */
+.gallery-img { background-position: center; background-size: cover; border-radius: 1rem; border: 1px solid rgba(6,78,59,0.1); box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.gallery-overlay { position: absolute; inset:0; background: rgba(0,0,0,0.4); border-radius: 1rem; display:flex; align-items:center; justify-content:center; transition: all 0.2s; }
+.group:hover .gallery-overlay { background: rgba(0,0,0,0.2); }
+.gallery-overlay-text { color:white; font-weight:700; font-size:1rem; }
+
+/* Tabs */
+.tab { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:1rem 0.5rem; font-weight:700; border-bottom:4px solid transparent; color: rgba(6,78,59,0.4); transition: color 0.2s; }
+.tab:hover { color:#32D74B; }
+.tab-active { border-bottom:4px solid #32D74B; color:black; }
+
+/* Steps */
+.step-number { width:2.5rem; height:2.5rem; border-radius:9999px; background:#32D74B; display:flex; align-items:center; justify-content:center; font-weight:700; z-index:10; color:black; }
+.step-number-alt { background: rgba(6,78,59,0.05); color: rgba(6,78,59,0.6); border:1px solid rgba(6,78,59,0.1);}
+.step-line { width:0.125rem; height:100%; background: rgba(6,78,59,0.1); position:absolute; top:2.5rem; }
+.step-tags .tag-dinner { padding:0.25rem 0.75rem; background: rgba(50,215,75,0.1); color: #064e3b; border-radius:9999px; font-weight:700; font-size:0.625rem; border:1px solid rgba(50,215,75,0.3); text-transform:uppercase; }
+.step-tags .tag-vip { padding:0.25rem 0.75rem; background: rgba(212,175,55,0.1); color: #D4AF37; border-radius:9999px; font-weight:700; font-size:0.625rem; border:1px solid rgba(212,175,55,0.3); text-transform:uppercase; }
+
+/* Sidebar */
+.occupancy-btn { display:flex; align-items:center; justify-content:center; gap:0.5rem; padding:0.75rem; border-radius:1rem; font-weight:700; border:2px solid rgba(6,78,59,0.05); transition:all 0.2s; }
+.occupancy-btn.active { background: rgba(50,215,75,0.05); border-color:#32D74B; }
+.price-summary { font-size:0.875rem; }
+
+/* Included Section */
+.included-title { font-size:2rem; font-weight:900; margin-bottom:2rem; }
+.included-card { display:flex; flex-direction:column; gap:0.75rem; }
+.included-card span { font-size:2.5rem; color:#32D74B; }
+.included-card h4 { font-weight:700; font-size:1.25rem; }
+.included-card p { color: rgba(6,78,59,0.6); font-size:0.875rem; line-height:1.5; }
+
+/* Footer */
+.footer-title { color:white; font-weight:700; margin-bottom:1rem; }
+.footer-links li { margin-bottom:0.75rem; }
+.footer-links a { color: rgba(255,255,255,0.6); font-size:0.875rem; transition: color 0.2s; }
+.footer-links a:hover { color:#32D74B; }
+.social-btn { width:2.5rem; height:2.5rem; border-radius:9999px; background: rgba(255,255,255,0.05); display:flex; align-items:center; justify-content:center; color:#32D74B; transition: all 0.2s; }
+.social-btn:hover { background:#32D74B; color:#064e3b; }
